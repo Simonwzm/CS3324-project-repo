@@ -1,3 +1,4 @@
+# for generating meta-info for dataset, need not any more after the first run
 import os
 import scipy.io as sio
 import random
@@ -63,7 +64,8 @@ def get_img_in_prompt(prompt_index):
 
 
 if __name__ == '__main__':
+    # all one-time functions
     # get_meta_info()
-    get_random_splits()
-
+    # get_random_splits()
+    print("already_run_once")
 
