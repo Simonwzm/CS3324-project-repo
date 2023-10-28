@@ -153,3 +153,12 @@ gfiqa:
   dataroot_target: ./datasets/GFIQA/image
   meta_info_file: ./datasets/meta_info/meta_info_GFIQADataset.csv
   split_file: ./datasets/meta_info/gfiqa_seed123.pkl
+
+AGIQA-3K:
+  name: AGIQA-3K
+  type: GeneralNRDataset 
+  dataroot_target: './datasets/AGIQA-3K/'
+  meta_info_file: './datasets/meta_info/AGIQA-3K.csv'
+  split_file: './datasets/meta_info/AGIQA-3K.pkl'
+  mos_range: [0, 5]
+  lower_better: false 
