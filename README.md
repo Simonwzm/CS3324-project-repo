@@ -1,6 +1,6 @@
 # AGIQA-3K dataset support for PyIQA
 
-We prepared AGIQA dataset support for the `pyiqa` module 
+We prepared AGIQA dataset support for the `pyiqa` module. 
 To use the dataset in `pyiqa`, first make sure you configure the environment for `pyiqa` and can run the following code to train an IQA metric model (as long as it starts training, you can exit halfway, for it is just to make sure all the requirements and paths are correctly created).
 
 ```shell
