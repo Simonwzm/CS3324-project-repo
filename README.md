@@ -14,7 +14,6 @@ python pyiqa/train_nsplits.py -opt options/train/DBCNN/train_DBCNN.yml
 
 PyIQA supports Windows, so you are able to run it on either Linux or Windows platform
 
-
 To add the dataset to pyiqa, download the file `datasets\meta_info\meta_info_AGIQA-3K.csv` and `datasets\meta_info\AGIQA-3K.pkl` and place them locally on the same path as shown in this repo. 
 
 Then extract the AGIQA-3K dataset to the `datasets/` directory. Now the structure should be like
@@ -51,6 +50,3 @@ python pyiqa/train_nsplits.py -opt options/train/train_AGICQ-3k.yml
 ```
 
 You can modify the `.yml` file to change details in training.
-
-
-
