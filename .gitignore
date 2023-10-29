@@ -5,3 +5,5 @@
 !datasets/meta_info/AGIQA-3K.pkl
 !README.md
 !.gitignore
+!options/
+!options/AGIQA-3K_opt.yml
