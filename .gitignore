@@ -7,3 +7,8 @@
 !.gitignore
 !options/
 !options/AGIQA-3K_opt.yml
+!options/train/train_AGICQ-3K.yml
+!options/train/train_general_iqa.yml
+!pyiqa/
+!pyiqa/data/
+!pyiqa/data/
