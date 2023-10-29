@@ -12,7 +12,7 @@ def get_random_splits(seed=123):
     total_num = 300
     all_prompts_index = list(range(total_num))
     num_splits = 10
-    save_path = f'./datasets/meta_info/my_dataset_seed{seed}.pkl'
+    save_path = f'./datasets/meta_info/AGIQA-3K.pkl'
 
     ratio = [0.8, 0.2]  # train/val/test
     sep_index = int(round(0.8 * total_num))
@@ -49,15 +49,15 @@ def get_meta_info():
     # print(len(prompts))
 
 def get_img_in_prompt(prompt_index):
-    info_file = './3kdata.csv'
+    info_file = './indexed_3kdata.csv'
     df = pd.read_csv(info_file)
     prompts = df['prompt'].unique().tolist()
     prompt = prompts[prompt_index]
     # get all rows with column "prompt" value == prompt
     df_prompt = df.loc[df['prompt'] == prompt]
-    # get the value of the "name" column of these rows, convert to list
-    img_list = df_prompt['name'].tolist()
-    return img_list
+    # get the value of the first column of these rows, convert to list
+    res = df_prompt.iloc[:, 0].tolist()
+    return res
 
 
 
@@ -66,6 +66,6 @@ def get_img_in_prompt(prompt_index):
 if __name__ == '__main__':
     # all one-time functions
     # get_meta_info()
-    # get_random_splits()
-    print("already_run_once")
+    get_random_splits()
+    # print("already_run_once")
 
